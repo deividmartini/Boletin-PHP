@@ -220,14 +220,12 @@ $nome_arquivo = TiraAcentos($nome);
     <h5 class="card-header info-color white-text text-center py-4">
         <strong>Olá '.$nome.'!</strong><br>
         <strong>Turma: '.$turma.'!</strong><br>
-        <strong>Disciplina: '.$disciplina.'!</strong><br><a href="resultados/'.$nome_arquivo.'.php"  target="_blank">Clique Aqui</a> e veja o resultado.
-        Sua média é <strong>'.number_format($conta2, 2, ",", " ");'       
+        <strong>Disciplina: '.$disciplina.'!</strong><br><a href="resultados/'.$nome_arquivo.'.php"  target="_blank">
+        A média do aluno é <strong>'.number_format($conta2, 2, ",", " ");'       
     ';
 
     echo '</strong>';
-/*
-    $arquivo = fopen("resultados/$nome_arquivo.php", "w") or die("Não foi possível gerar o arquivo!");
-*/
+
     if($conta2 < 1){echo '
       <div class="alert alert-primary" role="alert">
       Reprovado por faltas.</div>
